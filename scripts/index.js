@@ -33,13 +33,13 @@ function displaysharedesktop() {
         if (isOn) {
             share.style.display = "flex";
             sharebtn.style.backgroundColor = "hsl(214, 17%, 51%)";
-            sharebtnimg.src = "/images/icon-share-white.svg";
+            sharebtnimg.src = "images/icon-share-white.svg";
             clickedsharebtn.style.display = "none";
             triangle.style.display = "block";
         }  else {
             share.style.display = "none";
             sharebtn.style.backgroundColor = "hsl(210, 46%, 95%)";
-            sharebtnimg.src = "/images/icon-share.svg";
+            sharebtnimg.src = "images/icon-share.svg";
             triangle.style.display = "none";
         }
     });
