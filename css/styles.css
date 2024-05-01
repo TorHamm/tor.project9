@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  transition: 0.3s;
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h1, b {
+  color: hsl(217, 19%, 35%);
+}
+
+p {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(212, 23%, 69%);
+}
+
+html, body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+  width: 328px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.primary img {
+  width: 328px;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 25%;
+     object-position: 100% 25%;
+}
+
+.container {
+  padding: 40px 32px 20px 32px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-right: 7px;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+}
+.account .user {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.account .profilepic img {
+  width: 40px;
+  border-radius: 20px;
+}
+.account .name-date {
+  margin-right: 44px;
+}
+.account .shareicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  background-color: hsl(210, 46%, 95%);
+  cursor: pointer;
+}
+.account .shareicon img {
+  margin-left: 1px;
+  margin-bottom: 1px;
+  filter: none;
+}
+
+.share {
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  padding: 20px 32px;
+  height: 80px;
+  border-radius: 0 0 8px 8px;
+  background-color: hsl(217, 19%, 35%);
+}
+.share p {
+  letter-spacing: 4px;
+}
+.share .social {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  margin-right: 32px;
+}
+.share .social img {
+  cursor: pointer;
+}
+.share .shareicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 16px;
+  background-color: hsl(214, 17%, 51%);
+  cursor: pointer;
+}
+.share .shareicon img {
+  margin-left: 1px;
+  margin-bottom: 1px;
+}
+
+.disclaimer {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+  .card {
+    display: flex;
+    width: auto;
+  }
+  .primary img {
+    width: 288px;
+    height: 100%;
+    -o-object-position: left 50%;
+       object-position: left 50%;
+    border-radius: 8px 0 0 8px;
+  }
+  .container {
+    padding: 40px 40px 0 40px;
+  }
+  .text {
+    width: 350px;
+  }
+  .account {
+    padding: 20px 40px 30px 40px;
+  }
+  .share {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    right: 28%;
+    height: auto;
+    padding: 16px 32px;
+    border-radius: 8px;
+  }
+  .share .social {
+    margin-right: 0px;
+  }
+  .triangle {
+    display: none;
+    position: absolute;
+    top: 53.5%;
+    right: 33.5%;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    background-color: hsl(217, 19%, 35%);
+  }
+}/*# sourceMappingURL=styles.css.map */
